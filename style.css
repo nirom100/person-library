@@ -1,0 +1,51 @@
+.person-card {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.delete {
+  all: unset;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+  padding: 1rem 1rem;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  all: unset;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+}
+
+.buttons button:hover,
+.delete:hover {
+  font-style: italic;
+}
