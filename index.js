@@ -6,6 +6,7 @@ const firstnames = [
   "Egon",
   "Ferdinand",
   "Gisela",
+  "Clarissa",
 ];
 
 const lastnames = [
@@ -16,6 +17,7 @@ const lastnames = [
   "Engelmann",
   "Feuerstein",
   "Gans",
+  "Thomas",
 ];
 
 document.addEventListener("DOMContentLoaded", loadNamesFromLocalStorage);
@@ -28,11 +30,11 @@ function loadNamesFromLocalStorage() {
 }
 
 function randomFirstName() {
-  return firstnames[Math.floor(Math.random() * 7)];
+  return firstnames[Math.floor(Math.random() * 8)];
 }
 
 function randomLastName() {
-  return lastnames[Math.floor(Math.random() * 7)];
+  return lastnames[Math.floor(Math.random() * 8)];
 }
 
 function randomAge() {

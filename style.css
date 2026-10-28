@@ -1,27 +1,37 @@
+:root {
+  --space: 1rem;
+}
+
 .person-card {
-  margin: 2rem 0;
-  padding: 0 1rem;
+  margin: var(--space) 0;
+  padding: var(--space);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--space);
   background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 600;
+  line-height: 1;
   color: black;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+}
+
+.person-card p {
+  margin: 0;
 }
 
 .delete {
   all: unset;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: inherit;
   font-weight: 600;
   line-height: 1;
   color: inherit;
-  padding: 1rem 1rem;
+  padding: 0;
   margin-left: auto;
 }
 
@@ -33,6 +43,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+  padding: var(--space) 0;
 }
 
 .buttons button {
@@ -48,4 +59,15 @@
 .buttons button:hover,
 .delete:hover {
   font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .person-card {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .delete {
+    font-size: 22px;
+  }
 }
